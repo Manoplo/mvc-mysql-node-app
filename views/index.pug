@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p= subtitle
+  form(action="/", method="POST")
+    input(type="email", name="email" placeholder="Enter your email")
+    button(type="submit" value="Send") Sumbit
